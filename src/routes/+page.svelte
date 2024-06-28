@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Button } from "$lib/components/ui/button";
-    import * as Table from "$lib/components/ui/table/index.js";
+    import * as Table from "$lib/components/ui/table";
 
     const invoices = [
         {
@@ -54,7 +54,6 @@
 </svelte:head>
 
 <Table.Root>
-    <Table.Caption>A list of your recent invoices.</Table.Caption>
     <Table.Header>
         <Table.Row>
             <Table.Head class="w-[100px]">Invoice</Table.Head>
